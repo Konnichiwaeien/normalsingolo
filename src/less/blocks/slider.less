@@ -1,0 +1,51 @@
+.slider__wrapper {
+  position: relative;
+  .container();
+}
+.slider__item {
+  position: relative;
+  min-height: 600px;
+  background: url("../img/iphone.png") no-repeat center;
+}
+.slider__button {
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+.slider__button--prev {
+  left: 10px;
+}
+.slider__button--next {
+  right: 10px;
+}
+.slider__button-icon {
+  width: 30px;
+  height: 30px;
+  transition: 0.3s linear;
+  fill: #ca4549;
+}
+.slider__button:hover .slider__button-icon {
+  fill: #b73438;
+  cursor: pointer;
+}
+.slider__button:active .slider__button-icon {
+  fill: #9b2c30;
+}
+
+@media @desktop-width {
+  .slider__item {
+    background: url("../img/iphone--horizontal.png") no-repeat 385px 174px, url("../img/iphone.png") no-repeat 72px 53px;
+  }
+  .slider__button--prev {
+    top: 295px;
+    left: 35px;
+  }
+  .slider__button--next {
+    top: 295px;
+    right: 35px;
+  }
+}
