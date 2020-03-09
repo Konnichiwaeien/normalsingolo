@@ -1,6 +1,11 @@
 var fields = document.querySelectorAll(".form__field");
 var capts = document.querySelectorAll(".form__capt");
 
+
+for(var i = 0; i < fields.length; i++) {
+  fields[i].placeholder = "";
+}
+
 var focusField = function(item, capt) {
   item.addEventListener("focus", function() {
     capt.classList.add("form__capt--full");

@@ -1,5 +1,6 @@
 .services {
   padding: 63px 0 37px;
+  padding: 65px 0 35px;
   background: #f2f2f2;
   box-shadow: inset 0 -6px 0 0 #fff;
 }
@@ -8,9 +9,12 @@
 }
 .services__header {
   margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 .services__title {
   margin-bottom: 22px;
+  margin-bottom: 19px;
+
   font-size: 30px;
   line-height: 30px;
   font-weight: 900;
@@ -20,16 +24,33 @@
   font-weight: 300;
   word-spacing: -1px;
   text-align: justify;
+
+    font-size: 18px;
+    line-height: 31px;
+    margin-bottom: 42px;
+    word-spacing: -0.08em;
+    
 }
 .services__feature {
   position: relative;
   margin-bottom: 33px;
   margin-bottom: 30px;
+  margin-bottom: 31px;
   padding-left: 80px;
 }
 .services__column:last-of-type .services__feature:last-of-type {
   margin-bottom: 0;
 }
+
+.services__column:nth-of-type(2) .services__feature:nth-of-type(2) {
+  .services__feature-title {
+    word-spacing: -1.1px;
+  }
+  .services__feature-descr {
+    word-spacing: -1px;
+  }
+}
+
 .services__feature-title {
   margin-bottom: 11px;
   margin-bottom: 10px;
@@ -37,11 +58,27 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 900;
+  // word-spacing: 1px;
+    // line-height: 1;
+    // word-spacing: -0.06em;
+    text-align: justify;
 }
 .services__feature-descr {
   font-size: 12px;
   line-height: 21px;
   line-height: 22px;
+  text-align: justify;
+    // margin-top: 8.5px;
+    // margin-left: 0;
+    // font-weight: 400;
+    // font-size: 0.75rem;
+    // line-height: 1.83;
+    // color: rgb(118, 126, 158);
+    
+    // hyphens: manual;
+    // overflow: hid5den;
+    max-height: 65px;
+    overflow: hidden;
 }
 .services__type {
   position: absolute;
